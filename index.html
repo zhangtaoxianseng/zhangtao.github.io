@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>温暖回家路</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <link rel="apple-touch-icon-precomposed" href="//cdn.lanjingfm.com/static/html/img/radio/radio.png">
+    <link rel="Shortcut Icon" href="//cdn.lanjingfm.com/static/html/img/radio/radio.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//cdn.lanjingfm.com/static/html/css/common/common.css">
+   
+   <script>
+    var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?03cf2968b5d79f0b2eeaf4c8bfa69b33";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Demo styles -->
+     <script type="text/javascript">
+		 	document.documentElement.style.fontSize = innerWidth / 7.5 + "px";
+			window.onresize=function(){
+				document.documentElement.style.fontSize = innerWidth / 7.5 + "px";
+			}
+	</script>
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-slide img{
+    		position: absolute;
+    		display: none;
+    		float: left;
+    }
+    .leftimg{
+    		width: 80%;
+    		position: absolute;
+    		
+    }
+    .rightimg{
+    		position: absolute;
+    		left: 20%;
+    		top: 2.4rem;
+    }
+    .home_img1{
+    		width: 78%;
+    		left: 10%;
+    		top: 1.4rem;
+    }
+    .home_img2{
+    		width: 52%;
+    		left: 38%;
+    		top: 2.4rem;
+    }
+    .home_img3{
+    		width: 79%;
+    		left: 10%;
+    		top: 1.4rem;
+    }
+    .home_img4{
+    		width: 54%;
+    		left: 35%;
+    		top: 2.36rem;
+    }
+    .home_img5{
+    		width: 47.6%;
+    		left: 38.66%;
+    		top: 1.4rem;
+    }
+    .home_img6{
+    		width: 77%;
+    		left: 9.2%;
+    		top: 2.4rem;
+    }
+    .home_img7{
+    		width: 50%;
+    		left: 22.26%;
+    		top: 1.4rem;
+    }
+    .home_img8{
+    		width: 34.26%;
+    		left: 45%;
+    		top: 2.4rem;
+    }
+    .home_img9{
+    	 	position: absolute;
+    		width: 1.41rem;
+    		height: 1.41rem;
+    		left: 50%;
+    		margin-left:-0.705rem ;
+    		top: 0.86rem;
+    }
+    .home_img10{
+    	 	position: absolute;
+    		width: 2.25rem;
+    		left: 50%;
+    		top: 2.74rem;
+    		margin-left: -1.125rem;
+    }
+    .home_url{
+	    	position: absolute;
+	    	left: 0;
+	    	bottom: 0;
+	    	width: 100%;
+	    	height: 2.39rem;
+	    	background: rgba(165,117,69,0.7);
+	    	opacity: 0;
+    }
+    .swiper-slide .home_img11{
+    	 	position: absolute;
+    		width: 2.76rem;
+    		left: 0.68rem;
+    		top: 0.76rem;
+    		display: block;
+    }
+    .swiper-slide .home_img12{
+    	 	position: absolute;
+    		width: 2.76rem;
+    		left: 4.20rem;
+    		top: 0.76rem;
+    		display: block;
+    }
+    .swiper-pagination{
+    		display: none;
+    }
+        /*箭头指示引导*/
+        @-webkit-keyframes start {
+            0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
+            60% {opacity: 1;-webkit-transform: translate(0,0);}
+            100% {opacity: 0;-webkit-transform: translate(0,-8px);}
+        }
+        @-moz-keyframes start {
+            0%,30% {opacity: 0;-moz-transform: translate(0,10px);}
+            60% {opacity: 1;-moz-transform: translate(0,0);}
+            100% {opacity: 0;-moz-transform: translate(0,-8px);}
+        }
+        @keyframes start {
+            0%,30% {opacity: 0;transform: translate(0,10px);}
+            60% {opacity: 1;transform: translate(0,0);}
+            100% {opacity: 0;transform: translate(0,-8px);}
+        }
+
+
+        .u-arrow { position: absolute; bottom: 30px; left:50%; z-index: 150; width: 80px; height: 80px; margin-left: -39px; /*background: rgba(160,160,160,0.6); border-radius: 50%;*/ }
+        .u-arrow p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -14px 0 0 -25px;
+            width: 50px;
+            height: 28px;
+            background-position: 0 -82px;
+            -webkit-animation: start 1.5s infinite ease-in-out;
+            -moz-animation: start 1.5s infinite ease-in-out;
+             animation: start 1.5s infinite ease-in-out; 
+        }
+            .css_sprite01 {
+            background-image: url(//cdn.lanjingfm.com/static/html/img/Sprite/css_sprite01.png)!important;
+            background-repeat: no-repeat!important;
+        }
+    </style>
+</head>
+<body>
+    <audio id="audio" src="//cdn.lanjingfm.com/static/html/audio/wayhome.mp3" autoplay  loop ></audio>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background: url(//cdn.lanjingfm.com/static/html/img/home/page1.gif) no-repeat left center;background-size:100% 100% ;">
+                <img class="leftimg home_img1" src="//cdn.lanjingfm.com/static/html/img/home/home1.png"/>
+                <img class="rightimg home_img2" src="//cdn.lanjingfm.com/static/html/img/home/home2.png"/>
+                <section class="u-arrow">
+                    <p class="css_sprite01"></p>
+                </section>
+            </div>
+            <div class="swiper-slide" style="background: url(//cdn.lanjingfm.com/static/html/img/home/page2.gif) no-repeat left center;background-size:100% 100% ;">
+                <img class="leftimg home_img3" src="//cdn.lanjingfm.com/static/html/img/home/home3.png"/>
+                <img class="rightimg home_img4" src="//cdn.lanjingfm.com/static/html/img/home/home4.png"/>
+                <section class="u-arrow">
+                    <p class="css_sprite01"></p>
+                </section>
+            </div>
+ 			<div class="swiper-slide" style="background: url(//cdn.lanjingfm.com/static/html/img/home/page3.gif) no-repeat left center;background-size:100% 100% ;">
+                <img class="leftimg home_img5" src="//cdn.lanjingfm.com/static/html/img/home/home5.png"/>
+                <img class="rightimg home_img6" src="//cdn.lanjingfm.com/static/html/img/home/home6.png"/>
+                <section class="u-arrow">
+                    <p class="css_sprite01"></p>
+                </section>
+            </div>
+ 			<div class="swiper-slide" style="background: url(//cdn.lanjingfm.com/static/html/img/home/page4.gif) no-repeat left center;background-size:100% 100% ;"><img class="leftimg home_img7" src="//cdn.lanjingfm.com/static/html/img/home/home7.png"/><img class="rightimg home_img8" src="//cdn.lanjingfm.com/static/html/img/home/home8.png"/>
+ 				<img class=" home_img9" src="//cdn.lanjingfm.com/static/html/img/radio/radio.png"/>
+ 				<img class=" home_img10" src="//cdn.lanjingfm.com/static/html/img/home/lanjingfm.png"/>
+	 			<div class="home_url">
+	 				<a href="/radio/home.html"><img class=" home_img11" src="//cdn.lanjingfm.com/static/html/img/home/home_live.png?v=1"/></a>
+	 				<a href="/radio/viewRadioNew?radioid=100085"><img class=" home_img12" src="//cdn.lanjingfm.com/static/html/img/home/home_radio.png"/></a>
+	 				
+	 			</div>
+ 			</div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            slidesPerView: 1,
+            spaceBetween: 30,
+            mousewheel: true,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+            threshold : 70,
+        });
+    </script>
+    <script src="//cdn.lanjingfm.com/static/html/js/common/jquery.min.js"></script>
+     <script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script src= "//cdn.lanjingfm.com/static/html/js/common/share.js"></script>
+    <script type="text/javascript">
+        var times;
+        $(function(){
+    		$('.leftimg').show(2000);
+    			$('.rightimg').show(4000);
+                // var audio = document.getElementById("audio");
+               function autoPlayAudio2() {
+                    window.onload = function() {
+                        // alert(typeof WeixinJSBridge);
+                        WeixinJSBridge.invoke('getNetworkType', {}, function(e) {
+                            // 在这里拿到 e.err_msg, 这里面就包含了所有的网络类型
+                            // alert(e.err_msg);
+                            document.getElementById('audio').play();
+                        });
+                    };
+
+                }
+                 autoPlayAudio2();
+            })
+    	   $('.swiper-slide').on('touchstart',function(e){
+            // e.preventDefault();
+    　　　　startX = e.originalEvent.changedTouches[0].pageX,
+    　　　　startY = e.originalEvent.changedTouches[0].pageY;
+                $('.swiper-slide').on('touchmove',function(e){
+                    
+                })
+            })
+        $('.swiper-slide').on('touchend',function(e){
+               // e.preventDefault();
+    　　　　moveEndX = e.originalEvent.changedTouches[0].pageX,
+    　　　　moveEndY = e.originalEvent.changedTouches[0].pageY,
+    　　　　X = moveEndX - startX,
+    　　　　Y = moveEndY - startY;
+    
+    　　　　
+    　　　 if ( Y > 80 || Y < -80 ) {
+            $('.leftimg').hide();
+                    $('.rightimg').hide();
+                    $('.home_img9').hide(0);
+                    $('.home_img10').hide(0);
+                    $('.home_url').css({
+                        opacity:'0'
+                    })
+                 $('.leftimg').show(2000);
+                    $('.rightimg').show(4000);
+          
+    　　　　 }
+            clearTimeout(times);
+          
+            times = setTimeout(function(){
+                    $('.home_img7').hide(1000);
+                    $('.home_img8').hide(1500,function(){
+                        $('.home_img9').show(300);
+                        $('.home_img10').show(300,function(){
+                            $('.home_url').animate({
+                                opacity:'1'
+                            },1000)
+                        });
+                    });
+                    
+                },5000)
+                
+            })
+    	//分享
+            var params = window.location.href; 
+            var share ={
+                 title: ' 蓝鲸FM|温暖回家路', // 分享标题
+                 desc:'听广播、看主播、报路况、侃大山,请下载蓝鲸FM',
+                 link: params, // 分享链接
+                 imgUrl: 'http://cdn.lanjingfm.com/static/html/img/radio/radio.png', // 分享图标
+                 success: function (res) { 
+                     // 用户确认分享后执行的回调函数
+                   // alert('分享成功');
+                 },
+                 cancel: function (res) { 
+                     // 用户取消分享后执行的回调函数
+                     // alert("您取消了分享")
+                 }
+            }
+           // shareCallback('/radio/getJsSignInfo',{url:params},share);// 
+    </script>
+</body>
+</html>
